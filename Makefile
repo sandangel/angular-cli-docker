@@ -28,6 +28,11 @@ add:
 add-dev:
 	@docker-compose run --rm angular sh -c "yarn add -D $(ARGS) && $(PERM)"
 
+remove:
+	@docker-compose run --rm angular yarn remove $(ARGS)
+	
+.PHONY: start init install upgrade upgrade-interactive clean add add-dev remove
+
 #angular-cli
 
 new:
@@ -47,4 +52,4 @@ build-prod:
 
 %: ;
 
-.PHONY: install serve upgrade clean add g-c g-s build build-prod upgrade-interactive add-dev
+.PHONY: new g-c g-s build build-prod
