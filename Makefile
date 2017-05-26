@@ -8,7 +8,7 @@ start:
 	@docker-compose up
 
 init:
-	@docker-compose run --rm angular yarn init
+	@docker-compose run --rm angular sh -c "yarn init && $(PERM)"
 
 install:
 	@docker-compose run --rm angular sh -c "yarn install && $(PERM)"
