@@ -20,7 +20,7 @@ curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/Ma
 curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/docker-compose.yml
 ```
 
-### 2. At start script in package.json in case you have an existing project, include:
+### 2. At start script in package.json, include:
 
 ``` package.json
   "start": "ng serve -host 0.0.0.0"
