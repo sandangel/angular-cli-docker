@@ -30,13 +30,13 @@ make install
 make start
 
 # yarn add @angular/material
-make add PACK=@angular/material
+make add @angular/material
 
 # ng generate component ...
-make g-c COM=...
+make g-c SignUpComponent
 
 # ng generate service ...
-make g-s SER=...
+make g-s HttpService
 
 # clean up container
 make clean
@@ -45,8 +45,10 @@ make clean
 ## Conclusion
 This makes your computer more clean, do not need to install nodejs, yarn, angular-cli...
 
-You can config docker-compose.yml to run your own image
+This image only expose PORT 4200 as default of webpack, but you are free to run on any port by config docker-compose.yml -port
 
-You can config Makefile for more angular-cli commands, for example "ng build -prod"
+You can config docker-compose.yml to run your own image.
 
-Best way to run Angular CLI project.
+You can config Makefile for more angular-cli commands.
+
+Good luck and more fun with angular project
