@@ -29,9 +29,10 @@ curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/do
 ### 3. Run 
 ``` Makefile
 # ng new ...(run fast with yarn will install all dependencies)
-make new myWife && cd myWife
+make new myWife
 
-# yarn start
+# yarn start. You have to move downloaded files to new created project.
+mv Makefile docker-compose.yml myWife  && cd myWife
 make # or make start
 
 
