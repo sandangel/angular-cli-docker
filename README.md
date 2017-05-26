@@ -26,7 +26,7 @@ curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/do
   "start": "ng serve -host 0.0.0.0"
 ```
 
-### 3. Run 
+## Run 
 ``` Makefile
 # ng new ...(run fast with yarn will install all dependencies)
 make new myWife
