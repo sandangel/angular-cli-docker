@@ -33,7 +33,8 @@ make new myWife
 
 # yarn start. You have to move downloaded files to new created project.
 mv Makefile docker-compose.yml myWife  && cd myWife
-# include at start script "ng serve -host 0.0.0.0"
+
+# include at start script "ng serve -host 0.0.0.0" then run
 make # or make start
 
 
