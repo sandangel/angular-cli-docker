@@ -9,8 +9,7 @@ Node version manager, npm global, yarn global polute your HOME folder.
 Docker solve
 
 ## Prerequisites
-docker and docker-compose preinstalled
-make preinstalled
+make, docker and docker-compose preinstalled
 
 ## Set Up
 
@@ -43,4 +42,6 @@ make g-s SER=...
 
 ## Conclusion
 This makes your computer more clean, do not need to install nodejs, yarn, angular-cli...
-Best way to run Angular CLI project
+You can config docker-compose.yml to run your own image
+You can config Makefile for more angular-cli commands
+Best way to run Angular CLI project.
