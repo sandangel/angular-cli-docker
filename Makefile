@@ -45,10 +45,10 @@ g-s:
 	@docker-compose run --rm angular sh -c "ng g s $(ARGS) && $(PERM)"
 
 build:
-	@docker-compose run --rm angular ng build
+	@docker-compose run --rm angular sh -c "ng build && $(PERM)"
 
 build-prod:
-	@docker-compose run --rm angular ng build -prod
+	@docker-compose run --rm angular sh -c "ng build -prod && $(PERM)"
 
 %: ;
 
