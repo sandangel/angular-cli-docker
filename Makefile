@@ -20,5 +20,11 @@ g-c:
 
 g-s:
 	@docker-compose run --rm angular sh -c "ng g s $(SER) && $(PERM)"
+	
+build:
+	@docker-compose run --rm angular ng build
 
-.PHONY: install serve upgrade clean add g-c g-s
+build-prod:
+	@docker-compose run --rm angular ng build -prod
+
+.PHONY: install serve upgrade clean add g-c g-s build build-prod
