@@ -54,4 +54,12 @@ You can config docker-compose.yml to run your own image.
 
 You can config Makefile for more angular-cli commands.
 
-Good luck and have funs with your angular project
+Note: You have to give your own permission for files, directories created inside container so with commands that generate file or folder like "ng generate component ...", you have to specify like this:
+
+``` Makefile
+  g-c:
+	@docker-compose run --rm angular sh -c "ng g c $(ARGS) && $(PERM)"
+```
+With $(PERM) is a command to give permission back to you.
+
+Good luck and have funs with your angular project.
