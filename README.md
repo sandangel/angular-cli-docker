@@ -13,9 +13,14 @@ make, docker and docker-compose preinstalled
 
 ## Set Up
 
-### 1. Add Makefile and docker-compose.yml file to your project
+### 1. Add Makefile and docker-compose.yml file to your existing project or where you will run "ng new"
 
-### 2. At start script in package.json, include:
+``` bash
+curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/Makefile
+curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/docker-compose.yml
+```
+
+### 2. At start script in package.json in case you have an existing project, include:
 
 ``` package.json
   "start": "ng serve -host 0.0.0.0"
@@ -24,16 +29,24 @@ make, docker and docker-compose preinstalled
 ### 3. Run 
 ``` Makefile
 # ng new ...(run fast with yarn will install all dependencies)
-make new myWife
+make new myWife && cd myWife
 
 # yarn start
 make # or make start
 
-# yarn install
+
+# more commands
+# yarn init
+make init
+
+# yarn install all dependencies
 make install
 
-# yarn add @angular/material
+# yarn add @angular/material as dependencies
 make add @angular/material
+
+# yarn add -D @types/node as develop dependency
+make add-dev @types/node
 
 # ng generate component ...
 make g-c SignUpComponent
