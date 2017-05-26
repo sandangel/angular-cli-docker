@@ -5,6 +5,9 @@ ARGS = $(filter-out $@,$(MAKECMDGOALS))
 start:
 	@docker-compose up
 
+init:
+	@docker-compose run --rm angular yarn init
+
 install:
 	@docker-compose run --rm angular sh -c "yarn install && $(PERM)"
 
@@ -22,6 +25,8 @@ add:
 
 add-dev:
 	@docker-compose run --rm angular sh -c "yarn add -D $(ARGS) && $(PERM)"
+new:
+	@docker-compose run --rm angular ng new $(ARGS)
 
 g-c:
 	@docker-compose run --rm angular sh -c "ng g c $(ARGS) && $(PERM)"
