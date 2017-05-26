@@ -70,6 +70,8 @@ But you have to give your own permission for files, directories created inside c
 ```
 With $(PERM) is a command that give file permission back to you.
 
+$(ARGS) is command line argument after targets like "make g-c ...", "make add ..."
+
 This image only expose PORT 4200 as default of webpack, but you are free to run on any port by config docker-compose.yml -port or use your own image.
 
 
