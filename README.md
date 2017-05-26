@@ -59,7 +59,7 @@ make g-s HttpService
 make clean
 ```
 
-### Note
+### Config
 You can config Makefile for more angular-cli commands.
 
 But you have to give your own permission for files, directories created inside container. So with commands that generate file or folder like "ng generate component ...", you have to specify like this:
