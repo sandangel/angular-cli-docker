@@ -68,7 +68,7 @@ But you have to give your own permission for files, directories created inside c
   g-c:
 	@docker-compose run --rm angular sh -c "ng g c $(ARGS) && $(PERM)"
 ```
-With $(PERM) is a command to give permission back to you.
+With $(PERM) is a command that give file permission back to you.
 
 This image only expose PORT 4200 as default of webpack, but you are free to run on any port by config docker-compose.yml -port or use your own image.
 
