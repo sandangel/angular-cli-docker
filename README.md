@@ -45,21 +45,22 @@ make g-s HttpService
 make clean
 ```
 
-## Conclusion
-This makes your computer more clean, do not need to install nodejs, yarn, angular-cli...
-
-This image only expose PORT 4200 as default of webpack, but you are free to run on any port by config docker-compose.yml -port
-
-You can config docker-compose.yml to run your own image.
-
+### Note
 You can config Makefile for more angular-cli commands.
 
-Note: You have to give your own permission for files, directories created inside container so with commands that generate file or folder like "ng generate component ...", you have to specify like this:
+But you have to give your own permission for files, directories created inside container so with commands that generate file or folder like "ng generate component ...", you have to specify like this:
 
 ``` Makefile
   g-c:
 	@docker-compose run --rm angular sh -c "ng g c $(ARGS) && $(PERM)"
 ```
 With $(PERM) is a command to give permission back to you.
+
+This image only expose PORT 4200 as default of webpack, but you are free to run on any port by config docker-compose.yml -port or use your own image.
+
+
+## Conclusion
+
+This makes your computer more clean, do not need to install nodejs, yarn, angular-cli..., and do not need to add more $PATH.
 
 Good luck and have funs with your angular project.
