@@ -23,11 +23,14 @@ make, docker and docker-compose preinstalled
 
 ### 3. Run 
 ``` Makefile
-# yarn install
-make install
+# ng new ...(run fast with yarn will install all dependencies)
+make new myWife
 
 # yarn start
-make start
+make # or make start
+
+# yarn install
+make install
 
 # yarn add @angular/material
 make add @angular/material

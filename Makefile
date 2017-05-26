@@ -2,6 +2,8 @@ PERM = chown -R $(shell stat -c '%u:%g' .) ./
 
 ARGS = $(filter-out $@,$(MAKECMDGOALS))
 
+#yarn
+
 start:
 	@docker-compose up
 
@@ -25,6 +27,9 @@ add:
 
 add-dev:
 	@docker-compose run --rm angular sh -c "yarn add -D $(ARGS) && $(PERM)"
+
+#angular-cli
+
 new:
 	@docker-compose run --rm angular ng new $(ARGS)
 
