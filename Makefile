@@ -1,6 +1,6 @@
 PERM = chown -R $(shell stat -c '%u:%g' .) ./
 
-serve:
+start:
 	@docker-compose up
 
 install:
