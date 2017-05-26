@@ -54,4 +54,4 @@ You can config docker-compose.yml to run your own image.
 
 You can config Makefile for more angular-cli commands.
 
-Good luck and more fun with angular project
+Good luck and have funs with your angular project
