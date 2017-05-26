@@ -38,10 +38,12 @@ make g-c COM=...
 # ng generate service ...
 make g-s SER=...
 
+# clean up container
+make clean
 ```
 
 ## Conclusion
 This makes your computer more clean, do not need to install nodejs, yarn, angular-cli...
 You can config docker-compose.yml to run your own image
-You can config Makefile for more angular-cli commands
+You can config Makefile for more angular-cli commands, for example "ng build -prod"
 Best way to run Angular CLI project.
