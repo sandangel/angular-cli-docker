@@ -16,8 +16,7 @@ make, docker and docker-compose preinstalled
 ### 1. Add Makefile and docker-compose.yml file to your existing project or where you will run "ng new"
 
 ``` bash
-curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/Makefile
-curl -O https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/docker-compose.yml
+curl -o- -L https://raw.githubusercontent.com/sandangel/angular-cli-docker/master/install.sh | bash
 ```
 
 ### 2. At start script in package.json created by run "make new" (described below), include:
