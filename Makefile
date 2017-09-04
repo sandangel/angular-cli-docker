@@ -36,7 +36,7 @@ remove:
 #angular-cli
 
 new:
-	@docker-compose run --rm angular sh -c "ng new $(ARGS) && $(PERM)"
+	@docker-compose run --rm angular sh -c "ng new $(ARGS) --style=scss && $(PERM) && mv Makefile docker-compose.yml $(ARGS)"
 
 g-c:
 	@docker-compose run --rm angular sh -c "ng g c $(ARGS) && $(PERM)"
